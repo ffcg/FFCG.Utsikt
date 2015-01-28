@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <FormBlock>
+        <name>Formulärblock</name>
+        <description>Används för att lägga in ett formulär som du skapat på valfri sida</description>
+        <properties>
+          <Heading>
+            <caption>Titel</caption>
+            <help>Formulärblockets titel</help>
+          </Heading>
+          <Form>
+            <caption>Formulär</caption>
+            <help>Formuläret som ska visas</help>
+          </Form>
+        </properties>
+      </FormBlock>
+    </contenttypes>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <FormBlock>
+      <name>Form block</name>
+      <description>Used to display a form that you have created in a content area</description>
+      <properties>
+        <Heading>
+          <caption>Title</caption>
+          <help>The title of the form block</help>
+        </Heading>
+        <Form>
+          <caption>Form</caption>
+          <help>The form that will be displayed</help>
+        </Form>
+      </properties>
+    </FormBlock>
+    </contenttypes>
+  </language>
+</languages>

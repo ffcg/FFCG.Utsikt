@@ -1,0 +1,39 @@
+﻿@using FFCG.Utsikt.Web.Business.Renderer
+@model Lif.Models.Pages.NewsListPage.NewsListPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutSubpage.cshtml";
+}
+
+<div class="newslistpage">
+    <div class="container">
+    @if (Model.IsInEditMode && Model.MoreItemsInCmsThanInList)
+    {
+        <div class="alert-info">
+            <h2>@Html.Translate("/NewsListPage/moreitemsthaninlist")</h2>
+        </div>
+    }
+        <div class="row">
+            <div class="col-md-9">
+                <h1>@Html.PropertyFor(m => m.EpiData.PageName)</h1>
+                @foreach (var newsItem in Model.NewsItems)
+                {
+                    <div class="newslistpage-item">
+                        <div class="list-title">
+                            <a href="@Url.ContentUrl(newsItem.PageLink)"> @newsItem.Title  </a>
+                        </div>
+                        <div class="newslistpage-item-meta">
+                            <span class="date"><i class="glyphicon glyphicon-calendar"></i>@newsItem.PublishDate.ToString("d MMM") @newsItem.YearIfEarlinerThanThisYear</span>
+                        </div>
+                        <div class="newslistpage-item-preamble">
+                            @newsItem.Preamble
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-md-3 rightcontentarea">
+                @Html.PropertyFor(m => m.EpiData.RightContentArea, new {Tag = ContentAreaTags.FullWidth })
+            </div>
+        </div>
+    </div>
+</div>

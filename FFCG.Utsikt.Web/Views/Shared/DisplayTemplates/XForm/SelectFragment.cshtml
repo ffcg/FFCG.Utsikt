@@ -1,0 +1,19 @@
+﻿@model EPiServer.XForms.Parsing.SelectFragment
+
+@{
+    var haserror = ViewData.ModelState[Model.ValidationReference] != null && ViewData.ModelState[Model.ValidationReference].Errors.Count != 0;
+}
+<div class="form-group @Model.Reference @Model.Class @(Model.Required?"required":"") @(haserror ? "has-error" : "")" orientation="@Model.Orientation">
+    <div><label for="@Model.Reference" class="control-label">@Model.Label</label></div>
+        @foreach (var selectoption in Model.Options)
+        {
+            <label>
+                @Html.CheckBox(selectoption.Id, selectoption.SelectedItem)
+                @Html.Raw(selectoption.Text)
+            </label>
+        }
+        @if (haserror)
+        {
+            @Html.ValidationMessage(Model.ValidationReference, new { @class = "help-block" })
+        }
+    </div>

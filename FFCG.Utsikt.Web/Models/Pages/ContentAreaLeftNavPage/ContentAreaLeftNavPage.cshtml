@@ -1,0 +1,9 @@
+﻿@model Lif.Models.Pages.ContentAreaLeftNavPage.ContentAreaLeftNavPageViewModel
+           
+@{
+    Layout = "~/Views/Shared/_LayoutSubPageLeftNav.cshtml";
+}
+
+<h1>@Html.PropertyFor(m=>m.EpiData.PageName)</h1>
+
+@Html.PropertyFor(m=>m.EpiData.ContentArea)

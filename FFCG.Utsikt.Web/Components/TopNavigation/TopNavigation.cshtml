@@ -1,0 +1,21 @@
+﻿@using EPiServer.Core
+@using FFCG.Utsikt.Web.Helpers
+@model FFCG.Utsikt.Web.Components.TopNavigation.TopNavigationViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="navbar navbar-default navbar-static-top navbar-lif-main" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+                @Html.MenuList(ContentReference.StartPage,
+                @<li class="@(item.Selected ? "active" : null)">
+                    @Html.PageLink(item.Page, null, null)
+                <span class="marker"></span>
+            </li>)
+            </ul>
+        </div>
+    </div>
+</div>

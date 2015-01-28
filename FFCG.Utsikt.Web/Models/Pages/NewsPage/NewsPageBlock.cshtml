@@ -1,0 +1,21 @@
+﻿@model Lif.Models.Pages.NewsPage.NewsPageViewModel
+@{
+    Layout = null;
+}
+
+<div class="newsitem">
+    @if (Model.ShowImage)
+    {
+        <a href="@Url.ContentUrl(Model.EpiData.PageLink)">
+            <img src="@Model.ImageURL" alt="" class="img-responsive" />
+        </a>
+    }
+    <div class="list-title">
+        <a href="@Url.ContentUrl(Model.EpiData.PageLink)">@Html.PropertyFor(m => m.EpiData.PageName)</a>
+    </div>
+    <span class="date">@Model.EpiData.StartPublish.ToString("d MMMM") @Model.YearIfEarlinerThanThisYear</span>
+    <div>@Model.ShortPreamble</div>
+</div>
+
+
+

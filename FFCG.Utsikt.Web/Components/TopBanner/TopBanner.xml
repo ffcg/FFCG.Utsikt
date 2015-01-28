@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <topbanner>
+      <text>the research-based pharmaceutical industry in Sweden</text>
+      <logolink>en</logolink>
+    </topbanner>
+  </language>
+  <language name="Swedish" id="sv">
+    <topbanner>
+      <text>de forskande läkemedelsföretagen</text>
+      <logolink></logolink>
+    </topbanner>
+  </language>
+</languages>

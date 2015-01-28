@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <icontentdata>
+        <properties>
+          <metadescription>
+            <caption>Meta description</caption>
+            <help>Information för sökmotorer</help>
+          </metadescription>
+        </properties>
+      </icontentdata>
+    </contenttypes>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <icontentdata>
+        <properties>
+          <metadescription>
+            <caption>Meta description label</caption>
+            <help>Tooltip text.</help>
+          </metadescription>
+        </properties>
+      </icontentdata>
+    </contenttypes>
+  </language>
+</languages>

@@ -1,0 +1,19 @@
+﻿@using FFCG.Utsikt.Web.Business.Renderer
+@model Lif.Models.Blocks.IBlockTextAreaPreviewViewModel<Lif.Models.Blocks.BlockTextAreaBase>
+
+@{
+    Layout = "~/Views/Shared/_PreviewLayout.cshtml";
+}
+
+@Html.Translate("/blocktextarea/preview/width") @Html.PropertyFor(m => m.EpiData.Width)
+@Html.Translate("/blocktextarea/preview/position") @Html.PropertyFor(m => m.EpiData.Position)
+@RenderBody()
+<div class="editorial-content">
+    <div class="maintext">
+        <h1>@Html.Translate("/Preview/textarea")</h1>
+        <div class="row">
+            @Html.PropertyFor(x => @Model.ContentArea, new { Tag = ContentAreaTags.InlineTextArea })
+        </div>
+    </div>
+</div>
+@Html.Partial("~/Views/Shared/ContentPreview.cshtml", @Model.ContentArea)

@@ -1,0 +1,7 @@
+﻿@model Lif.Models.Blocks.TextAreaBlock.TextAreaBlockPreviewViewModel
+
+@{
+    Layout = @Model.Layout;
+}
+
+@Html.Translate("/textareablock/preview/color") @Html.PropertyFor(m => m.EpiData.Color)

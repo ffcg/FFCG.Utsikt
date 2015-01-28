@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <startpage>
+        <name>Start sida</name>
+        <description>Du behöver bara en startsida och den finns antagligen redan</description>
+        <properties>
+          <WhatIsLifImage>
+            <caption>Vad är lif bild</caption>
+            <help>Bilden som visas i toppen till höger</help>
+          </WhatIsLifImage>
+          <MainContentAreaTitle>
+            <caption>Titel för huvud arean</caption>
+            <help>Titel för huvud arean</help>
+          </MainContentAreaTitle>
+          <maincontentarea>
+            <caption>Huvud arean för innehåll</caption>
+            <help>Den som ligger här hamnar överst på sidan</help>
+          </maincontentarea>
+          <RightContentArea>
+            <caption>Högerspalt</caption>
+            <help>Det innehåll som ligger till höger på sidan</help>
+          </RightContentArea>
+          <BottomContentAreaTitle>
+            <caption>Titel för botten arean</caption>
+            <help>Titel för botten arean</help>
+          </BottomContentAreaTitle>
+          <BottomContentArea>
+            <caption>Botten area för innehåll</caption>
+            <help>Innehåll som sträcker sig över hela sidan</help>
+          </BottomContentArea>
+          <SearchPageLink>
+            <caption>Länk till söksidan</caption>
+            <help>Ange länken till söksidan på siten</help>
+          </SearchPageLink>
+          <GlobalNavigationList>
+            <caption>Globalnavigation</caption>
+            <help>Länkar till sidorna som visas i topbannern på sidan ex Kontakt,Press,In English</help>
+          </GlobalNavigationList>
+          <FooterContentArea>
+            <caption>Sidfoten</caption>
+            <help>Innehållet som kommer visas i sidfoten på alla sidor</help>
+          </FooterContentArea>
+          <CalendarPage>
+            <caption>Länk till kalendersidan</caption>
+            <help>Ange länker till kalendersidan</help>
+          </CalendarPage>
+          <RobotsTxtContent>
+            <caption>Robots.txt text</caption>
+            <help>Den här infon är till för sökmotorer så att de vet vart de hittar sitemap.xml och så att man kan styra dem till eller bort från specifika sidor</help>
+          </RobotsTxtContent>
+          <GoogleAnalyticsAccount>
+            <caption>Kod för Google Analytics</caption>
+            <help>Ange den kod som siten har i Google analytics ex. UA-55372746-1</help>
+          </GoogleAnalyticsAccount>
+          <LifServiceUrl>
+            <caption>Lif service url</caption>
+            <help>Urlen till lif service ex http://service.lif.se</help>
+          </LifServiceUrl>
+          <Logo>
+            <caption>Logga</caption>
+            <help>Logga uppe i vänster hörn</help>
+          </Logo>
+        </properties>
+      </startpage>
+    </contenttypes>
+  </language>
+  
+  <language name="english" id="en">
+    <contenttypes>
+      <startpage>
+        <name>Start page</name>
+        <description>You only need one if these and its probably already created</description>
+        <properties>
+          <WhatIsLifImage>
+            <caption>What is LIF image</caption>
+            <help>The image that will be displayed in the top right corner</help>
+          </WhatIsLifImage>
+          <MainContentAreaTitle>
+            <caption>Title for main content arean</caption>
+            <help>Title for main content arean</help>
+          </MainContentAreaTitle>
+          <maincontentarea>
+            <caption>Main content area</caption>
+            <help>This content will be displayed on the top of the page</help>
+          </maincontentarea>
+          <RightContentArea>
+            <caption>Right content area</caption>
+            <help>This contetn will be displayed in the right column</help>
+          </RightContentArea>
+          <BottomContentAreaTitle>
+            <caption>Title for bottom content arean</caption>
+            <help>Title for bottom content arean</help>
+          </BottomContentAreaTitle>
+          <BottomContentArea>
+            <caption>Bottom content area</caption>
+            <help>This content will be displayed below the other areas and cover the entire page width</help>
+          </BottomContentArea>
+          <SearchPageLink>
+            <caption>Search page link</caption>
+            <help>The link to the site search page</help>
+          </SearchPageLink>
+          <GlobalNavigationList>
+            <caption>Global navigation</caption>
+            <help>The navigation that will be displayed in the top banner, ex Contact,Press, På svenska</help>
+          </GlobalNavigationList>
+          <FooterContentArea>
+            <caption>Footer</caption>
+            <help>This content will be displayed in the footer for all pages</help>
+          </FooterContentArea>
+          <CalendarPage>
+            <caption>Link to calendar</caption>
+            <help>The link to the calendar page</help>
+          </CalendarPage>
+          <RobotsTxtContent>
+            <caption>Robots.txt content</caption>
+            <help>This content is for search crawlers so they know where to finde the sitemap.xml and so that we can include and exclude pages</help>
+          </RobotsTxtContent>
+          <GoogleAnalyticsAccount>
+            <caption>Code for Google Analytics</caption>
+            <help>The code for this site in Google Analytics, ex UA-55372746-1</help>
+          </GoogleAnalyticsAccount>
+          <LifServiceUrl>
+            <caption>Lif service url</caption>
+            <help>the url to lif service ex http://service.lif.se</help>
+          </LifServiceUrl>
+          <Logo>
+            <caption>Logo</caption>
+            <help>Logo at top left corners</help>
+          </Logo>
+        </properties>
+      </startpage>
+    </contenttypes>
+  </language>
+</languages>

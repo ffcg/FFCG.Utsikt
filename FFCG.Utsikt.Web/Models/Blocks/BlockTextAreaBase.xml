@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <icontentdata>
+        <properties>
+          <Position>
+            <caption>Position</caption>
+            <help>Vänster eller höger position på blocket</help>
+          </Position>
+          <Width>
+            <caption>Bredd</caption>
+            <help>Bredden på blocket</help>
+          </Width>
+        </properties>
+      </icontentdata>
+    </contenttypes>
+    <BlockTextArea>
+      <preview>
+        <Width>Sätt bredden på blocket</Width>
+        <color>Sätt bakgrundsfärgen på blocket</color>
+        <position>Sätt vänster eller höger position på blocket</position>
+      </preview>
+    </BlockTextArea>
+    <property>
+      <enum>
+        <BlockTextAreaWidth>
+          <full>Full</full>
+          <half>Halv</half>
+          </BlockTextAreaWidth>
+        <BlockTextAreaPosition>
+          <left>Vänster</left>
+          <right>Höger</right>
+        </BlockTextAreaPosition>
+      </enum>
+    </property>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <icontentdata>
+        <properties>
+          <Position>
+            <caption>Position</caption>
+            <help>Left or right position on the block</help>
+          </Position>
+          <Width>
+            <caption>Width</caption>
+            <help>The block width</help>
+          </Width>
+        </properties>
+      </icontentdata>
+    </contenttypes>
+    <BlockTextArea>
+      <preview>
+        <Width>Set the block width</Width>
+        <color>Set the block color</color>
+        <position>Set the block position (left/right)</position>
+      </preview>
+    </BlockTextArea>
+    <property>
+      <enum>
+        <BlockTextAreaWidth>
+          <full>Full</full>
+          <half>Half</half>
+        </BlockTextAreaWidth>
+        <BlockTextAreaPosition>
+            <left>Left</left>
+            <right>Right</right>
+          </BlockTextAreaPosition>     
+    </enum>
+    </property>
+  </language>
+</languages>

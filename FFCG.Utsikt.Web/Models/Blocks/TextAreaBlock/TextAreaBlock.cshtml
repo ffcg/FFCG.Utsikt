@@ -1,0 +1,22 @@
+﻿@model Lif.Models.Blocks.TextAreaBlock.TextAreaBlockViewModel
+
+@{
+    Layout = @Model.Layout;
+}
+<div class="textareablock">
+    <div class="textareablock-content @Model.BackgroundColorCssClass">
+        @Html.PropertyFor(m => m.EpiData.Image)
+        @if (Model.IsInEditMode)
+        {
+            <h3>@Html.PropertyFor(m => m.EpiData.Title)</h3>
+        }
+        else
+        {
+            if (Model.EpiData.Title != null)
+            {
+                <h3>@Html.PropertyFor(m => m.EpiData.Title)</h3>
+            }
+        }
+        @Html.PropertyFor(m => m.EpiData.MainText, new { CssClass = "maintext" })
+    </div>
+</div>

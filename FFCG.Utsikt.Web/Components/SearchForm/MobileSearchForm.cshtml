@@ -1,0 +1,24 @@
+﻿@using System.Web.Mvc.Html
+@using EPiServer.Shell.Web.Mvc.Html
+@model FFCG.Utsikt.Web.Components.SearchForm.SearchFormViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="navbar-search mobile">
+    @*We use GET to submit the form to enable bookmarking etc of search results.  However, as GET will remove other
+        query string values not in the form we can't use that in edit mode.*@
+    
+    @using (Html.BeginForm(null, null, Model.SearchPageRoute, Model.IsInEditMode ? FormMethod.Post : FormMethod.Get))
+    {
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input type="text" class="form-control searchfield" name="q" id="SearchKeywords" placeholder="@Html.Translate("/searchform/searchtextplaceholder")" />
+            <!--
+            <button type="submit" class="btn btn-default search" id="SearchButton">@Html.Translate("/searchform/searchbuttontext")</button>
+            -->
+        </div>
+    }
+</div>
+

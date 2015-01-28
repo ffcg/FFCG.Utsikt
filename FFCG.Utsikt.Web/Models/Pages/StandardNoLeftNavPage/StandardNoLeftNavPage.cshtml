@@ -1,0 +1,21 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model Lif.Models.Pages.StandardNoLeftNavPage.StandardNoLeftNavPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutSubpage.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-9">
+            <h1>@Html.PropertyFor(m => m.EpiData.PageName)</h1>
+            <div class="preamble">@Html.PropertyFor(m => m.EpiData.Preamble)</div>
+            <div class="maintext bottommargin">@Html.PropertyFor(m => m.EpiData.MainText)</div>
+            @Html.PropertyFor(m => m.EpiData.MainContentArea, new { CssClass = "maincontentarea" })
+        </div>
+        <div class="col-md-4 col-lg-3">
+            @Html.PropertyFor(m => m.EpiData.RightContentArea)
+        </div>
+    </div>
+</div>

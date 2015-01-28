@@ -1,0 +1,22 @@
+﻿@model FFCG.Utsikt.Web.Components.TopBanner.TopBannerViewModel
+
+<div class="navbar navbar-default navbar-static-top navbar-lif-global" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/@Html.Translate("/topbanner/logolink")">
+                <img class="lif-logo" src="@Url.ContentUrl(Model.LifLogo)" alt="" />
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                @foreach (var item in Model.GlobalNavigation)
+                {
+                    <li><a href="@item.Url">@item.Text</a></li>
+                }
+                <li>
+                    @Html.Action("index","SearchForm")
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <TitleBlock>
+        <name>Titelblock</name>
+        <description>Ett block för titel</description>
+        <properties>
+          <Title>
+            <caption>Titel</caption>
+            <help>Titeln som kommer visas i blocket</help>
+          </Title>
+        </properties>
+      </TitleBlock>
+    </contenttypes>
+  </language>
+  
+  <language name="english" id="en">
+    <contenttypes>
+      <TitleBlock>
+      <name>Title block</name>
+      <description>A block for displaying a title</description>
+      <properties>
+        <Title>
+          <caption>Title</caption>
+          <help>The title that will be displayed</help>
+        </Title>
+      </properties>
+    </TitleBlock>
+    </contenttypes>
+  </language>
+</languages>

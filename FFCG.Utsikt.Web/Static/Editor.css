@@ -1,0 +1,32 @@
+﻿/* ReSharper disable CssNotResolved */
+/*.lead {EditMenuName:Lead Text;}
+blockquote {EditMenuName:Quote;}*/
+h2 { EditMenuTitle: Heading Styles; EditMenuName: Heading 2; }
+h3 { EditMenuName: Heading 3; }
+.italic-text { EditMenuTitle: Text Styles; EditMenuName: Italic; }
+
+.list-black { EditMenuTitle: List Styles; EditMenuNem: List black}
+.list-yellow { EditMenuName: List Yellow; }
+.list-limeyellow { EditMenuName: List Limeyellow; }
+.list-red { EditMenuName: List Red; }
+.list-green { EditMenuName: List Green; }
+.list-blue { EditMenuName: List Blue; }
+.list-darkblue { EditMenuName: List Darkblue; }
+.list-darkgray { EditMenuName: List Darkgray; }
+.list-gray { EditMenuName: List Gray; }
+.list-white { EditMenuName: List White; }
+.list-etikler { EditMenuName: List Etikler; }
+
+.font-color-yellow { EditMenuTitle: Font Styles; EditMenuName: Font Yellow; }
+.font-color-limeyellow { EditMenuName: Font Limeyellow; }
+.font-color-red { EditMenuName: Font Red; }
+.font-color-green { EditMenuName: Font Green; }
+.font-color-blue { EditMenuName: Font Blue; }
+.font-color-darkblue { EditMenuName: Font Darkblue; }
+.font-color-darkgray { EditMenuName: Font Darkgray; }
+.font-color-gray { EditMenuName: Font Gray; }
+.font-color-white { EditMenuName: Font White; }
+.font-color-etikler { EditMenuName: Font Etikler; }
+
+.img-responsive {EditMenuTitle: format styles; EditMenuName:Img Responsive; }
+/* ReSharper restore CssNotResolved */

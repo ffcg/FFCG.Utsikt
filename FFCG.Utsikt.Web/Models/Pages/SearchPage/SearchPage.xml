@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <searchpage>
+        <name>Söksida</name>
+        <description>Söksida för hemsidan</description>
+        <properties>
+          <RelatedContentArea>
+            <caption>Innehåll</caption>
+            <help>Om man vi ha något övrigt block innehåll</help>
+          </RelatedContentArea>
+        </properties>
+        </searchpage>
+    </contenttypes>
+    <searchpage>
+      <searchbutton>Sök</searchbutton>
+      <searchfor>Sökresultat för:</searchfor>
+      <result>Resultat</result>
+      <resultedin>och fick</resultedin>
+      <zero>Noll </zero>
+      <hits>Träffar</hits>
+      <all>Alla</all>
+      <calendarevents>Kalenderevent</calendarevents>
+      <documents>Dokument</documents>
+      <page>Webbsidor</page>
+    </searchpage>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <searchpage>
+        <name>Search page</name>
+        <description>The search page for the website</description>
+        <properties>
+          <RelatedContentArea>
+            <caption>Content area</caption>
+            <help>Additional block content can be placed here</help>
+          </RelatedContentArea>
+        </properties>
+      </searchpage>
+    </contenttypes>
+    <searchpage>
+      <searchbutton>Search</searchbutton>
+      <searchfor>You searched for:</searchfor>
+      <result>Result</result>
+      <resultedin>and got</resultedin>
+      <zero>Zero</zero>
+      <hits>Hits</hits>
+      <all>All</all>
+      <calendarevents>Calendar events</calendarevents>
+      <documents>Documents</documents>
+      <page>Webpages</page>
+    </searchpage>
+  </language>
+</languages>

@@ -1,0 +1,47 @@
+﻿@using FFCG.Utsikt.Web.Business.Renderer
+@model Lif.Models.Pages.NewsPage.NewsPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutSubPage.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="newspage">
+            <div class="col-md-9">
+                @if (Model.IsInEditMode)
+                {
+                    <h1>@Html.PropertyFor(m => m.EpiData.PageName)</h1>
+                }
+                else
+                {
+                    <h1 class="newspage-title">@(Model.EpiData.PageName)</h1>
+                }
+                <div class="newspage-news-publish">
+                    <span class="date">
+                        @Model.EpiData.StartPublish.ToString("d MMMM") @Model.YearIfEarlinerThanThisYear @Html.PropertyFor(m => m.EpiData.ChangedDateText)
+                    </span>
+                </div>
+                <div class="newspage-image">
+                    @Html.PropertyFor(m => m.EpiData.Image)
+                </div>
+                <div class="newspage-leftcontent">
+                    <div class="col-md-12">
+                        <div class="row newspage-maincontent">
+                            <div class="newspage-newstext">
+                                <div class="newspage-preamble preamble">@Html.PropertyFor(m => m.EpiData.Preamble)</div>
+                                <div class="newspage-maintext maintext bottommargin">
+                                    @Html.PropertyFor(m => m.EpiData.MainText)
+                                </div>
+
+                            </div>
+                            @Html.PropertyFor(m => m.EpiData.MainContentArea)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 rightcontentarea newspage-rightcontentarea">
+                @Html.PropertyFor(m => m.EpiData.RightContentArea, new { CssClass = "row", Tag = ContentAreaTags.FullWidth })
+            </div>
+        </div>
+    </div>
+</div>

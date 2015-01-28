@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <ContentAreaPage>
+        <name>Blocksida</name>
+        <description>Tom sida som kan fyllas med block</description>
+        <properties>
+          <MainContentArea>
+            <caption>Innehåll</caption>
+            <help>Innehåll på sidan läggs här</help>
+          </MainContentArea>
+        </properties>
+      </ContentAreaPage>
+    </contenttypes>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <ContentAreaPage>
+        <name>Block page</name>
+        <description>Empty page that can be filled with blocks</description>
+        <properties>
+          <MainContentArea>
+            <caption>Content area</caption>
+            <help>Blocks are placed here</help>
+          </MainContentArea>
+        </properties>
+      </ContentAreaPage>
+    </contenttypes>
+  </language>
+</languages>

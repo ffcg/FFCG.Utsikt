@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <NewsPage>
+        <name>Nyhetssida</name>
+        <description>Sida för nyheter</description>
+        <properties>
+          <Image>
+            <caption>Bild (850x370px)</caption>
+            <help>Sidans top bild</help>
+          </Image>
+          <MainText>
+            <caption>Huvud text</caption>
+            <help>Den text som hamnar överst på sidan</help>
+          </MainText>
+          <Preamble>
+            <caption>Ingress</caption>
+            <help>Sidans ingress</help>
+          </Preamble>
+          <MainContentArea>
+            <caption>Innehåll under text</caption>
+            <help>Om man vi ha något övrigt block innehåll under texten</help>
+          </MainContentArea>
+          <RightContentArea>
+            <caption>Höger innehåll</caption>
+            <help>Innehåll som kommer visas till höger om nyheten</help>
+          </RightContentArea>
+          <BlockText>
+            <caption>Blocktext</caption>
+            <help>Text som syns om sidan visas som ett block på startsidan</help>
+          </BlockText>
+          <BlockImage>
+            <caption>Blockbild</caption>
+            <help>Bild som syns om sidan visas som ett block på startsidan</help>
+          </BlockImage>
+          <ChangedDateText>
+            <caption>Ändrat den text</caption>
+            <help>Här skriver du in en text om artikeln ändrats. Ex: Ändrad den 15 okt</help>
+          </ChangedDateText>
+        </properties>
+      </NewsPage>
+    </contenttypes>
+    <newspageblock>
+      <readmore>Läs mer</readmore>
+    </newspageblock>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <NewsPage>
+        <name>News page</name>
+        <description>This is the standard page used for for example articles</description>
+        <properties>
+          <Image>
+            <caption>Image (850x370px)</caption>
+            <help>Page top image</help>
+          </Image>
+          <MainText>
+            <caption>Main text</caption>
+            <help>This text will be at the top of the page</help>
+          </MainText>
+          <Preamble>
+            <caption>Preamble</caption>
+            <help>The page Preamble</help>
+          </Preamble>
+          <MainContentArea>
+            <caption>Content area</caption>
+            <help>Additional block content can be placed here</help>
+          </MainContentArea>
+          <RightContentArea>
+            <caption>Right content</caption>
+            <help>Content placed here will be visible to the right of the news</help>
+          </RightContentArea>
+          <BlockText>
+            <caption>Blocktext</caption>
+            <help>Text that is shown if page is rendered as a block at start page</help>
+          </BlockText>
+          <BlockImage>
+            <caption>Blockimage</caption>
+            <help>Image that is shown if page is rendered as a block at start page</help>
+          </BlockImage>
+          <ChangedDateText>
+            <caption>Changed text</caption>
+            <help>If you change the news write a change text here. ex Changed 15 okt</help>
+          </ChangedDateText>
+        </properties>
+      </NewsPage>
+    </contenttypes>
+    <newspageblock>
+      <readmore>Read more</readmore>
+    </newspageblock>
+  </language>
+</languages>

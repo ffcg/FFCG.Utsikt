@@ -1,0 +1,15 @@
+﻿@using FFCG.Utsikt.Web.Business.XFormsRendering
+@model Lif.Models.Blocks.FormBlock.FormBlockViewModel
+           
+@{
+    Layout = null;
+}
+
+<h3>@Html.PropertyFor(m=>m.EpiData.Heading)</h3>
+<div @Html.EditAttributes(m => m.EpiData.Form)>
+    @using (Html.BeginXForm(Model.EpiData.Form, new { Action = Model.ActionUrl }))
+    {
+        Html.RenderCustomXForm(Model.EpiData.Form);
+    }
+</div>
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <ContentAreaLeftNavPage>
+        <name>Blocksida med vänster navigation</name>
+        <description>Tom sida för block med vänster navigation</description>
+        <properties>
+          <ContentArea>
+            <caption>Innehåll</caption>
+            <help>Innehåll på sidan läggs här</help>
+          </ContentArea>
+        </properties>
+      </ContentAreaLeftNavPage>
+    </contenttypes>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <ContentAreaLeftNavPage>
+        <name>Block page with left navigation</name>
+        <description>Empty page for block with left navigation</description>
+        <properties>
+          <ContentArea>
+            <caption>Content area</caption>
+            <help>Blocks are placed here</help>
+          </ContentArea>
+        </properties>
+      </ContentAreaLeftNavPage>
+    </contenttypes>
+  </language>
+</languages>

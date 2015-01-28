@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <TextAreaBlock>
+        <name>Block för textrutor</name>
+        <description>Ett block som man kan lägga in i textrutor</description>
+        <properties>
+          <Image>
+            <caption>Bild</caption>
+            <help>Blockets bild</help>
+          </Image>
+          <Title>
+            <caption>Titel</caption>
+            <help>Blockets titel</help>
+          </Title>
+          <MainText>
+            <caption>Text</caption>
+            <help>Texten som kommer visas</help>
+          </MainText>
+          <Color>
+            <caption>Bakgrundsfärg</caption>
+            <help>Bakgrundsfärgen på blocket</help>
+          </Color>
+        </properties>
+      </TextAreaBlock>
+    </contenttypes>
+    <TextAreaBlock>
+      <preview>
+        <color>Sätt bakgrundsfärgen på blocket</color>
+      </preview>
+    </TextAreaBlock>
+    <property>
+      <enum>
+        <TextAreaBlockColor>
+          <yellow>Gul</yellow>
+          <yellow90>Gul 90%</yellow90>
+          <yellow80>Gul 80%</yellow80>
+          <limeyellow>Limegul</limeyellow>
+          <limeyellow80>Limegul 80%</limeyellow80>
+          <limeyellow60>Limegul 60%</limeyellow60>
+          <red>Röd</red>
+          <red90>Röd 90%</red90>
+          <red80>Röd 80%</red80>
+          <green>Grön</green>
+          <green90>Grön 90%</green90>
+          <green80>Grön 80%</green80>
+          <blue>Blå</blue>
+          <blue90>Blå 90%</blue90>
+          <blue80>Blå 80%</blue80>
+          <darkblue>Mörkblå</darkblue>
+          <darkblue90>Mörkblå 90%</darkblue90>
+          <darkblue80>Mörkblå 80%</darkblue80>
+          <darkgray>Mörkgrå</darkgray>
+          <darkgray90>Mörkgrå 90%</darkgray90>
+          <darkgray80>Mörkgrå 80%</darkgray80>
+          <gray>Grå</gray>
+          <white>Vit</white>
+          <etikler>Etikler</etikler>
+          <etikler90>Etikler 90%</etikler90>
+          <etikler80>Etikler 80%</etikler80>
+        </TextAreaBlockColor>
+      </enum>
+    </property>
+  </language>
+  
+  <language name="english" id="en">
+    <contenttypes>
+      <TextAreaBlock>
+      <name>Block for text areas</name>
+      <description>A block that can be placed inside text areas</description>
+      <properties>
+        <Image>
+          <caption>Image</caption>
+          <help>Block image</help>
+        </Image>
+        <Title>
+          <caption>Titel</caption>
+          <help>Block titel</help>
+        </Title>
+        <MainText>
+          <caption>Text</caption>
+          <help>The text that will be displayed</help>
+        </MainText>
+        <Color>
+          <caption>Background color</caption>
+          <help>The backgroundcolor of the block</help>
+        </Color>
+      </properties>
+    </TextAreaBlock>
+    </contenttypes>
+    <TextAreaBlock>
+        <preview>
+          <color>Set the block color</color>
+        </preview>
+      </TextAreaBlock>
+    <property>
+      <enum>
+        <TextAreaBlockColor>
+          <yellow>Yellow</yellow>
+          <yellow90>Yellow 90%</yellow90>
+          <yellow80>Yellow 80%</yellow80>
+          <limeyellow>Limeyellow</limeyellow>
+          <limeyellow80>Limeyellow 80%</limeyellow80>
+          <limeyellow60>Limeyellow 60%</limeyellow60>
+          <red>Red</red>
+          <red90>Red 90%</red90>
+          <red80>Red 80%</red80>
+          <green>Green</green>
+          <green90>Green 90%</green90>
+          <green80>Green 80%</green80>
+          <blue>Blue</blue>
+          <blue90>Blue 90%</blue90>
+          <blue80>Blue 80%</blue80>
+          <darkblue>Darkblue</darkblue>
+          <darkblue90>Darkblue 90%</darkblue90>
+          <darkblue80>Darkblue 80%</darkblue80>
+          <darkgray>Darkgray</darkgray>
+          <darkgray90>Darkgray 90%</darkgray90>
+          <darkgray80>Darkgray 80%</darkgray80>
+          <gray>Grå</gray>
+          <white>Vit</white>
+          <etikler>Etikler</etikler>
+          <etikler90>Etikler 90%</etikler90>
+          <etikler80>Etikler 80%</etikler80>
+        </TextAreaBlockColor>
+      </enum>
+    </property>
+  </language>
+</languages>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <StandardPage>
+        <name>Standardsida</name>
+        <description>Det här är standardsidan med vänsternavigering</description>
+        <properties>
+          <Image>
+            <caption>Bild</caption>
+            <help>Sidans top bild</help>
+          </Image>
+          <Title>
+            <caption>Titel</caption>
+            <help>Sidans titel</help>
+          </Title>
+          <MainText>
+            <caption>Huvud text</caption>
+            <help>Den text som hamnar överst på sidan</help>
+          </MainText>
+          <Preamble>
+            <caption>Ingress</caption>
+            <help>Sidans ingress</help>
+          </Preamble>
+          <MainContentArea>
+            <caption>Innehåll</caption>
+            <help>Om man vi ha något övrigt block innehåll</help>
+          </MainContentArea>
+        </properties>
+      </StandardPage>
+    </contenttypes>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <StandardPage>
+      <name>Standard page</name>
+      <description>Standardpage with left navigation</description>
+      <properties>
+        <Image>
+          <caption>Image</caption>
+          <help>Page top image</help>
+        </Image>
+        <Title>
+          <caption>Title</caption>
+          <help>The page title</help>
+        </Title>
+        <MainText>
+          <caption>Main text</caption>
+          <help>This text will be at the top of the page</help>
+        </MainText>
+        <Preamble>
+          <caption>Preamble</caption>
+          <help>The page Preamble</help>
+        </Preamble>
+        <MainContentArea>
+          <caption>Content area</caption>
+          <help>Additional block content can be placed here</help>
+        </MainContentArea>
+      </properties>
+    </StandardPage>
+    </contenttypes>
+  </language>
+</languages>

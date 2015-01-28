@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <TextBlock>
+        <name>Textblock</name>
+        <description>Ett block för text</description>
+        <properties>
+          <Text>
+            <caption>Text</caption>
+            <help>Texten som kommer visas i blocket</help>
+          </Text>
+        </properties>
+      </TextBlock>
+    </contenttypes>
+  </language>
+  
+  <language name="english" id="en">
+    <contenttypes>
+      <TextBlock>
+      <name>Text block</name>
+      <description>A block for displaying a text</description>
+      <properties>
+        <Text>
+          <caption>Text</caption>
+          <help>The text that will be displayed</help>
+        </Text>
+      </properties>
+    </TextBlock>
+    </contenttypes>
+  </language>
+</languages>

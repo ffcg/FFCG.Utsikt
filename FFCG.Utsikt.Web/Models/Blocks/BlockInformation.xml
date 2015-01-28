@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <groups>
+      <footerblock>Sidfot</footerblock>
+      <carouselblocks>Statistikkarusell</carouselblocks>
+      <relateditems>Relaterat innehåll</relateditems>
+      <textareablocks>Block för textrutor</textareablocks>
+    </groups>
+  </language>
+
+  <language name="english" id="en">
+    <groups>
+      <footerblock>Footer</footerblock>
+      <carouselblocks>Statistics carousel</carouselblocks>
+      <relateditems>Related Items</relateditems>
+      <textareablocks>Blocks for Text Areas</textareablocks>
+    </groups>
+  </language>
+</languages>

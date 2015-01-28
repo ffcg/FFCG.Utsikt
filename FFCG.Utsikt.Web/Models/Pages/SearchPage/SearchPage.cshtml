@@ -1,0 +1,86 @@
+﻿@model Lif.Models.Pages.SearchPage.SearchPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutSubPage.cshtml";
+}
+<div class="container searchpage">
+    @*<div class="row">
+        <div class="col-md-8,search-form">
+            @*We use GET to submit the form to enable bookmarking etc of search results.  However, as GET will remove other
+                query string values not in the form we can't use that in edit mode.*@
+    @*@using (Html.BeginForm(null, null, null, PageEditing.PageIsInEditMode ? FormMethod.Post : FormMethod.Get))
+        {
+            <input type="text" tabindex="1" name="q" value="@Model.SearchedQuery" />
+            <input type="submit" tabindex="2" class="btn" value="@Html.Translate("/searchpage/searchbutton")" />
+        }*@
+    @*</div>
+        </div>*@
+
+    @if (Model.Hits != null)
+    {
+
+        <div class="col-md-12 grayHead">
+            <h3>
+                @Html.Translate("/searchpage/searchfor") <span>@Model.SearchedQuery</span>
+                <span>(@Model.AllHitCount)</span>
+            </h3>
+        </div>
+
+
+        <div id="searchresults" class="col-md-8 SearchResults">
+            @foreach (var hit in Model.Hits)
+            {
+
+                <div class="row listresult @hit.Category.Type().ToString()">
+                    <div class="col-xs-1 col-sm-1 col-md-1 listResultImage">
+                        <img src="@hit.Category.GetIconUrl()" alt="" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 listResultText">
+                        <div class="list-title"><a href="@hit.Url">@hit.Title</a></div>
+                        <p>@Html.Raw(hit.Excerpt)</p>
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div class="col-md-1 separator"></div>
+        <div class="col-md-3 searchresult-grouping">
+            <div class="row">
+
+                <div class="pagenav-wrapper">
+                    <div class="pagenav-group">
+                        <ul id="searchresults-grouping-list">
+                            <li class="searchresults-grouping-list-item selected"><a class="" data-filter="" id="filter-all">@Html.Translate("/searchpage/all") (@Model.AllHitCount)</a></li>
+                            <li class="searchresults-grouping-list-item"><a data-filter="@SearchResultTypeEnum.CalendarEvent.ToString()" id="filter-calendar">@Html.Translate("/searchpage/calendarevents") (@Model.CalendarEventHitCount)</a></li>
+                            <li class="searchresults-grouping-list-item"><a data-filter="@SearchResultTypeEnum.Document.ToString()" id="filter-documents">@Html.Translate("/searchpage/documents") (@Model.DocumentHitCount)</a></li>
+                            <li class="searchresults-grouping-list-item"><a data-filter="@SearchResultTypeEnum.Page.ToString()" id="filter-other">@Html.Translate("/searchpage/page") (@Model.PageHitCount)</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    }
+
+</div>
+
+<script type="text/javascript">
+    $("#searchresults-grouping-list a").click(function () {
+        var filterOn = $(this).attr("data-filter");
+        $("#searchresults-grouping-list li").removeClass("selected");
+        $(this).parent().addClass("selected");
+
+        if (filterOn != "") {
+            $(".listresult").fadeOut("300", function () {
+                $(".listresult").filter("." + filterOn).fadeIn("300");
+            });
+
+
+        } else {
+            $(".listresult").fadeIn("200");
+        }
+    });
+</script>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <NewsListPage>
+        <name>Nyhetslistningssida</name>
+        <description>Den här sidan kommer lista de nyheter som ligger under i strukturen</description>
+        <properties>
+          <MaxItems>
+            <caption>Max antal nyheter</caption>
+            <help>Max antal nyheter som kommer visas i listan</help>
+          </MaxItems>
+          <MaxMonths>
+            <caption>Max antal månader</caption>
+            <help>Alla nyheter äldre än så här många månader kommer inte visas i listan</help>
+          </MaxMonths>
+          <RightContentArea>
+            <caption>Höger innehåll</caption>
+            <help>Innehåll som kommer visas till höger om nyheten</help>
+          </RightContentArea>
+        </properties>
+      </NewsListPage>
+    </contenttypes>
+    <NewsListPage>
+      <moreitemsthaninlist>Det finns fler nyheter än vad som listas. Fundera på att arkivera några</moreitemsthaninlist>
+    </NewsListPage>
+  </language>
+
+  <language name="english" id="en">
+    <contenttypes>
+      <NewsListPage>
+        <name>News list page</name>
+        <description>This page will list the news beneath it in the structure</description>
+        <properties>
+          <MaxItems>
+            <caption>Max new items</caption>
+            <help>The maximum number of news items that will be shown in the list</help>
+          </MaxItems>
+          <MaxMonths>
+            <caption>Max months</caption>
+            <help>All news items older than this number of months will be hidden</help>
+          </MaxMonths>
+          <RightContentArea>
+            <caption>Right content</caption>
+            <help>Content placed here will be visible to the right of the news</help>
+          </RightContentArea>
+        </properties>
+      </NewsListPage>
+    </contenttypes>
+    <NewsListPage>
+      <moreitemsthaninlist>There are currently more news items than are listed. Think about moving some to the archive</moreitemsthaninlist>
+    </NewsListPage>
+  </language>
+</languages>

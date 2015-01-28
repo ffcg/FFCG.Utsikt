@@ -1,0 +1,26 @@
+﻿@using FFCG.Utsikt.Web.Business.Renderer
+@model EPiServer.Core.ContentArea
+         
+@{
+    Layout = null;
+}
+
+
+<div class="editorial-content">
+    <div class="block-area">
+        <h1>@Html.Translate("/Preview/Full")</h1>
+        <div class="row ">
+            @Html.PropertyFor(x => @Model, new {Tag = ContentAreaTags.FullWidth })
+        </div>
+        <h1>@Html.Translate("/Preview/Half")</h1>
+        <div class="row">
+            @Html.PropertyFor(x => @Model, new {Tag = ContentAreaTags.HalfWidth })
+        </div>
+        <h1>@Html.Translate("/Preview/OneThird")</h1>
+        <div class="row">
+            @Html.PropertyFor(x => @Model, new {Tag = ContentAreaTags.OneThirdWidth })
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

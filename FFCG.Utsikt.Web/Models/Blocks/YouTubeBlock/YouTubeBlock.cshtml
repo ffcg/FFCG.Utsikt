@@ -1,0 +1,17 @@
+﻿@model Lif.Models.Blocks.YouTubeBlock.YouTubeBlockViewModel
+           
+@{
+    Layout = null;
+}
+
+<h3>@Html.PropertyFor(m => m.EpiData.Title)</h3>
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="@Model.VideoUrl" allowfullscreen></iframe>
+</div>
+@if (!string.IsNullOrEmpty(Model.EpiData.Text)||Model.IsInEditMode)
+{
+    <div class="italic-text video-text">
+        @Html.PropertyFor(m => m.EpiData.Text)
+    </div>
+}

@@ -1,0 +1,5 @@
+﻿@model EPiServer.XForms.Parsing.SubmitFragment
+
+<div class="form-group submit @Model.Reference @Model.Class">
+    <button type="submit" class="btn btn-default" name="@Html.Raw(Model.UniqueName)" title="@Html.Raw(Model.Title)">@Html.Raw(Model.Value)</button>
+</div>

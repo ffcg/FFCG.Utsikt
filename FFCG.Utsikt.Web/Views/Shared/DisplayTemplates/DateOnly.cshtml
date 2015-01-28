@@ -1,0 +1,6 @@
+﻿@model string
+           
+@if (Model != null) { 
+    @DateTime.Parse(Model).ToString("d MMMM yyyy")
+}
+

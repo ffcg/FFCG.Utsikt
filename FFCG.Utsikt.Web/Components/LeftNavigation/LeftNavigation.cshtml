@@ -1,0 +1,52 @@
+﻿@using EPiServer.Core
+@using FFCG.Utsikt.Web.Helpers
+@model FFCG.Utsikt.Web.Components.LeftNavigation.LeftNavigationViewModel
+
+@{
+    Layout = null;
+}
+
+@helper ItemTemplate(HtmlHelpers.MenuItem firstLevelItem)
+{
+    <li class="@(firstLevelItem.Selected && !firstLevelItem.HasSelectedChildPage.Value ? "selected" : firstLevelItem.HasSelectedChildPage.Value ? "selectedparent" : "")">
+        @Html.PageLink(firstLevelItem.Page)
+        @if (firstLevelItem.HasChildren.Value)
+        {
+            if (firstLevelItem.Selected)
+            {
+                <i class="glyphicon glyphicon-chevron-down"></i>
+            }
+            else
+            {
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            }
+        }
+    </li>
+    if (firstLevelItem.Selected)
+    {
+        <li class="sublist-wrapper">
+            <ul>
+                @Html.MenuList(firstLevelItem.Page.ContentLink, SubLevelItemTemplate)
+            </ul>
+        </li>
+    }
+}
+
+@helper SubLevelItemTemplate(HtmlHelpers.MenuItem subLevelItem)
+{
+    <li class="subitem @(subLevelItem.Selected ? "selected" : "")">
+        <i class="glyphicon glyphicon-bull">&bull;</i>
+        @Html.PageLink(subLevelItem.Page)
+    </li>
+}
+
+<div class="pagenav-wrapper">
+    <div class="pagenav-group">
+        <ul>
+            @if (Model.SectionStartPage != null)
+            {
+                @Html.MenuList(Model.SectionStartPage, ItemTemplate)
+            }
+        </ul>
+    </div>
+</div>

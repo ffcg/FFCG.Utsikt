@@ -1,0 +1,19 @@
+﻿@model Lif.Models.Pages.StandardPage.StandardPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutSubPageLeftNav.cshtml";
+}
+@Html.PropertyFor(m => m.EpiData.Image)
+@if (Model.IsInEditMode)
+{
+    <h1 class="@(string.IsNullOrEmpty(Model.EpiData.Title)?"":"text-muted")">@Html.PropertyFor(m => m.EpiData.PageName)</h1>
+    <h1>@Html.PropertyFor(m => m.EpiData.Title)</h1>
+}
+else
+{
+    <h1>@(string.IsNullOrEmpty(Model.EpiData.Title) ? Model.EpiData.PageName : Model.EpiData.Title)</h1>
+}
+<div class="preamble">@Html.PropertyFor(m => m.EpiData.Preamble)</div>
+<div class="maintext bottommargin">@Html.PropertyFor(m => m.EpiData.MainText)</div>
+@Html.PropertyFor(m => m.EpiData.MainContentArea, new { CssClass = "maincontentarea" })
+

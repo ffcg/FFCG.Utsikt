@@ -1,0 +1,28 @@
+﻿@using FFCG.Utsikt.Web.Business.Renderer
+@model Lif.Models.Pages.StartPage.StartPageViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="startpage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <h1>
+                    @Html.PropertyFor(m => m.EpiData.MainContentAreaTitle)
+                </h1>
+
+                @Html.PropertyFor(m => m.EpiData.MainContentArea, new { CssClass = "startpage-maincontentarea", Tag = ContentAreaTags.FullWidth })
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 rightcontentarea startpage-rightcontentarea ">
+                <div class="startpage-whatislif">@Html.PropertyFor(m => m.EpiData.WhatIsLifImage)</div>
+                @Html.PropertyFor(m => m.EpiData.RightContentArea, new { Tag = ContentAreaTags.FullWidth })
+            </div>
+        </div>
+    </div>
+    <div class="container-full">
+            @Html.PropertyFor(m => m.EpiData.BottomContentArea, new { CssClass = "bottomcontentarea clearfix", Tag = ContentAreaTags.FullWidth })
+    </div>
+</div>

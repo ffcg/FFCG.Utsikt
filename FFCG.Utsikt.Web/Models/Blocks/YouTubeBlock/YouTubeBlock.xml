@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <contenttypes>
+      <YouTubeBlock>
+        <name>YouTube block</name>
+        <description>Här kan du lägga in en YouTube film</description>
+        <properties>
+          <Title>
+            <caption>Titel</caption>
+            <help>Titeln som kommer visas i blocket</help>
+          </Title>
+          <VideoUrl>
+            <caption>Video url</caption>
+            <help>Här lägger du in url till video ex. www.youtube.com/embed/7EhEhn5p0D8</help>
+          </VideoUrl>
+        </properties>
+      </YouTubeBlock>
+    </contenttypes>
+  </language>
+  
+  <language name="english" id="en">
+    <contenttypes>
+      <YouTubeBlock>
+      <name>YouTube block</name>
+      <description>A block for displaying a YouTube video</description>
+      <properties>
+        <Title>
+          <caption>Title</caption>
+          <help>The title that will be displayed</help>
+        </Title>
+        <VideoUrl>
+          <caption>Video url</caption>
+          <help>Link to your video ex. www.youtube.com/watch?v=7EhEhn5p0D8</help>
+        </VideoUrl>
+      </properties>
+    </YouTubeBlock>
+    </contenttypes>
+  </language>
+</languages>

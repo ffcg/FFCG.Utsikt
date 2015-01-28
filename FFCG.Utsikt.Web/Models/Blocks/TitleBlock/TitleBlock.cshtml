@@ -1,0 +1,17 @@
+﻿@using EPiServer.Web.Routing
+@model Lif.Models.Blocks.TitleBlock.TitleBlockViewModel
+
+@{
+    Layout = null;
+}
+    <div class="titleblock-underline">
+        <div class="titlewithimage">
+            @if(Model.EpiData.Icon != null)
+            { 
+                <img src="@UrlResolver.Current.GetUrl(Model.EpiData.Icon)" alt="" />
+            }
+            <span>
+                @Html.PropertyFor(m => m.EpiData.Title)
+            </span>
+        </div>
+    </div>

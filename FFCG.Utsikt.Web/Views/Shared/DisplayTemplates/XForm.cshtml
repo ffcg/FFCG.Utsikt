@@ -1,0 +1,31 @@
+﻿@using EPiServer.HtmlParsing
+@using FFCG.Utsikt.Web.Business.XFormsRendering
+@model EPiServer.XForms.XForm
+
+@if (ViewData["XFormActionResult"] is EPiServer.Web.Mvc.XForms.XFormSuccessActionResult) { 
+<strong>@Html.Translate("/xforms/alreadyposted")</strong>
+}
+else
+{    
+    if (Model != null)
+    {
+        @Html.ValidationMessage("")
+
+        var fragments = Model.CreateHtmlFragments();
+
+        // Check if this is a postback, and if it is get the posted fragments for this instance
+        if (ViewData["XFormId"] != null && Model.Id.ToString().Equals(ViewData["XFormId"].ToString()))
+        {
+            fragments = (IEnumerable<HtmlFragment>)ViewData["XFormFragments"];
+        }
+        if (fragments != null)
+        {
+            // Render all fragments
+            foreach (var fragment in fragments)
+            {
+                @Html.RenderCustomHtmlFragment(fragment, string.Format("~/Views/Shared/DisplayTemplates/XForm/{0}.cshtml", fragment.GetType().Name))
+            }
+        }
+
+    }
+}

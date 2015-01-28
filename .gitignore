@@ -19,7 +19,7 @@ Thumbs.db
 *.cache
 *.ilk
 *.log
-FFCG.Utsikt/[Bb]in
+FFCG.Utsikt.Web/[Bb]in
 FFCG.Utsikt.Tests/[Bb]in
 [Dd]ebug*/
 *.sbr
@@ -28,7 +28,7 @@ obj/
 _ReSharper*/
 !App_Data/GeoLiteCity.dat
 App_Data/*
-FFCG.Utsikt/License.config
+FFCG.Utsikt.Web/License.config
 BuildArtifacts*/
-FFCG.Utsikt/Static/*.css.map
+FFCG.Utsikt.Web/Static/*.css.map
 TempDeploy/*

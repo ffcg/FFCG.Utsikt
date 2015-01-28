@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="Swedish" id="sv">
+    <groups>
+      <specialpages>Special sidor</specialpages>
+      <sitesettings>Site Settings</sitesettings>
+      <calendarpages>Kalendersidor</calendarpages>
+      <functionalpages>Funktionssidor - Du behöver bara en per site</functionalpages>
+      <workareapages>Frågor vi arbetar med sidor</workareapages>
+      <responsepages>Remissvarssidor</responsepages>
+      <memberpages>Medlemssidor</memberpages>
+      <newspages>Nyhetssidor</newspages>
+      <landingpages>Landningssidor</landingpages>
+      <reportpages>Rapportsidor</reportpages>
+      <presspages>Pressidor</presspages>
+    </groups>
+  </language>
+
+  <language name="english" id="en">
+    <groups>
+      <specialpages>Special pages</specialpages>
+      <sitesettings>Site Settings</sitesettings>
+      <calendarpages>Calendar pages</calendarpages>
+      <functionalpages>Functional pages - you only need one per site</functionalpages>
+      <workareapages>Areas of work</workareapages>
+      <responsepages>Response pages</responsepages>
+      <memberpages>Member pages</memberpages>
+      <newspages>News pages</newspages>
+      <landingpages>Landning pages</landingpages>
+      <reportpages>Report pages</reportpages>
+      <presspages>Press pages</presspages>
+    </groups>
+  </language>
+</languages>

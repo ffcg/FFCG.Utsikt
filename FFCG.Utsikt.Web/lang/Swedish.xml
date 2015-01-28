@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="Swedish" id="sv">
+    <layout>
+      <breadcrumbs>
+        <youarehere>Du är här:</youarehere>
+      </breadcrumbs>
+      <cookietext>Vi använder cookies, läs mer </cookietext>
+      <cookielinktext>här</cookielinktext>
+      <cookielink>/om-lif/integritetspolicy/</cookielink>
+      <cookiebutton>JAG FÖRSTÅR</cookiebutton>
+    </layout>
+    <displayoptions>
+      <displaymode-full>Hel (1/1)</displaymode-full>
+      <displaymode-half>Halv (1/2)</displaymode-half>
+      <displaymode-one-third>En tredjedel (1/3)</displaymode-one-third>
+      <displaymode-two-thirds>Två tredjedelar (2/3)</displaymode-two-thirds>
+      <displaymode-one-quarter>En fjärdedel (1/4)</displaymode-one-quarter>
+      <displaymode-three-quarters>Tre fjärdedelar (3/4)</displaymode-three-quarters>
+    </displayoptions>
+    <editorstyleoptions>
+      <!--<Lead_Text>Ledtext</Lead_Text>
+      <Quote>Citat</Quote>-->
+      <heading_styles>Rubriker</heading_styles>
+      <heading_2>Heading 2 (H2)</heading_2>
+      <heading_3>Heading 3 (H3)</heading_3>
+
+      <text_styles>Textstiler</text_styles>
+      <italic>Kursiv</italic>
+      
+      <list_styles>Färgsätt punkt i listan</list_styles>
+      <list_yellow>Gul</list_yellow>
+      <list_limeyellow>Limegul</list_limeyellow>
+      <list_red>Röd</list_red>
+      <list_green>Grön</list_green>
+      <list_blue>Blå</list_blue>
+      <list_darkblue>Mörkblå</list_darkblue>
+      <list_darkgray>Mörkgrå</list_darkgray>
+      <list_gray>Grå</list_gray>
+      <list_white>Vit</list_white>
+      <list_etikler>Etikler</list_etikler>
+
+      <font_styles>Färgsätt typsnitt</font_styles>
+      <font_yellow>Gul</font_yellow>
+      <font_limeyellow>Limegul</font_limeyellow>
+      <font_red>Röd</font_red>
+      <font_green>Grön</font_green>
+      <font_blue>Blå</font_blue>
+      <font_darkblue>Mörkblå</font_darkblue>
+      <font_darkgray>Mörkgrå</font_darkgray>
+      <font_gray>Grå</font_gray>
+      <font_white>Vit</font_white>
+      <font_etikler>Etikler</font_etikler>
+      <format_styles>Format stilar</format_styles>
+      <img_responsive>Responsiv bild</img_responsive>
+    </editorstyleoptions>
+
+    <xforms>
+      <alreadyposted>Du har redan skickat det här formuläret</alreadyposted>
+    </xforms>
+  </language>
+</languages>

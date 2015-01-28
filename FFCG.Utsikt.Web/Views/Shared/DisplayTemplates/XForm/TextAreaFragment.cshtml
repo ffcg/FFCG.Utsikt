@@ -1,0 +1,20 @@
+﻿@model EPiServer.XForms.Parsing.TextareaFragment
+
+@{
+    var haserror = ViewData.ModelState[Model.ValidationReference]!=null && ViewData.ModelState[Model.ValidationReference].Errors.Count != 0;
+}
+<div class="form-group @Model.Reference @Model.Class @(Model.Required?"required":"") @(haserror ? "has-error" : "")">
+    <label for="@Model.Reference" class="control-label">@Model.Label</label>
+    @if (Model.Required)
+    {
+        @Html.TextArea(Model.Reference, Model.Value, Model.Rows, Model.Columns, new { @class = "form-control", placeholder = Model.Title, required = "required" })
+    }
+    else
+    {
+        @Html.TextArea(Model.Reference, Model.Value, Model.Rows, Model.Columns, new { @class = "form-control", placeholder = Model.Title })
+    }
+    @if (haserror)
+    {
+        @Html.ValidationMessage(Model.ValidationReference, new { @class = "help-block" })
+    }
+</div>

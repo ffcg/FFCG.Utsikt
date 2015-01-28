@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+      <searchform>
+        <searchbuttontext>Search</searchbuttontext>
+        <searchtextplaceholder>Search...</searchtextplaceholder>
+      </searchform>
+  </language>
+  <language name="Swedish" id="sv">
+      <searchform>
+        <searchbuttontext>Sök</searchbuttontext>
+        <searchtextplaceholder>Sök...</searchtextplaceholder>
+      </searchform>
+  </language>
+</languages>
