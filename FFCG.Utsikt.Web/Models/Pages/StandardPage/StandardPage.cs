@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Web;
 using FFCG.Utsikt.Web.Helpers;
+using Newtonsoft.Json;
 
 namespace FFCG.Utsikt.Web.Models.Pages.StandardPage
 {
@@ -58,5 +60,22 @@ namespace FFCG.Utsikt.Web.Models.Pages.StandardPage
         {
             return base.MatchQueryInProperties(new List<string> { Preamble.ToNonNullString(), MainText.ToNonNullString() }, query, length);
         }
+
+        public override JsonResult ToJson()
+        {
+             return new JsonResult(){Data=new StandardPageJson(this),JsonRequestBehavior = JsonRequestBehavior.AllowGet};
+        }
+    }
+
+    public class StandardPageJson:PageBaseJson
+    {
+        public StandardPageJson(StandardPage page) : base(page)
+        {
+            MainText = page.MainText.ToNonNullString();
+            Preamble = page.Preamble.ToNonNullString();
+        }
+
+        public string MainText { get; set; }
+        public string Preamble { get; set; }
     }
 }

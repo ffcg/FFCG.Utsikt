@@ -27,6 +27,20 @@ namespace FFCG.Utsikt.Web
           action = "Index"
       },
       new[] { "FFCG.Utsikt.Web.Controllers" });
+
+               RouteTable.Routes.MapRoute(
+              "pageasjson",
+              "pageasjson/{url}",
+              new
+              {
+                  controller = "PageAsJson",
+                  action = "Index",
+                  url=""
+              },
+              new[] { "FFCG.Utsikt.Web.Controllers" });
+
         }
+
+
     }
 }
