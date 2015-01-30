@@ -1,1 +1,1 @@
-﻿var myApp = angular.module('epiApp', []);
+﻿var myApp = angular.module('epiApp', ['ngSanitize']);

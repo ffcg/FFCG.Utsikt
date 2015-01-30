@@ -12,9 +12,8 @@
                 <div>{{ article.Name }}</div>
                 <img src="{{ article.ImageUrl }}" ng-click="showText(article)"/>
                 <div ng-show="article.showArticle">
-                    {{ article.Preamble }}
-                    
-                    {{ article.MainText }}
+                    <div ng-bind-html="article.Preamble"></div>
+                    <div ng-bind-html="article.MainText"> </div>
                 </div>
             </div>
         </div>
