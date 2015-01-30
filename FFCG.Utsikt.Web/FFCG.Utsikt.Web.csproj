@@ -314,6 +314,7 @@
     <Compile Include="Components\TopBanner\TopBannerViewModel.cs" />
     <Compile Include="Components\TopNavigation\TopNavigationController.cs" />
     <Compile Include="Components\TopNavigation\TopNavigationViewModel.cs" />
+    <Compile Include="Controllers\NewsFeedController.cs" />
     <Compile Include="Controllers\RobotsTxtController.cs" />
     <Compile Include="Controllers\SitemapController.cs" />
     <Compile Include="Global.asax.cs">

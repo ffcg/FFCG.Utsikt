@@ -13,5 +13,6 @@ namespace FFCG.Utsikt.Web.Business
         string RobotsTxtContent { get; set; }
         string GoogleAnalyticsAccount { get; set; }
         ContentReference Logo { get; set; }
+        ContentReference NewsListPage { get; set; }
     }
 }

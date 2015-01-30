@@ -67,5 +67,13 @@ namespace FFCG.Utsikt.Web.Models.Pages.StartPage
             GroupName = PageInforamtion.Categorization.Tabs.SiteSettings,
             Order = 150)]
         public virtual string GoogleAnalyticsAccount { get; set; }
+
+        [CultureSpecific]
+        [Display(
+            Name = "NewsListPage",
+            Description = "NewsListPage",
+            GroupName = PageInforamtion.Categorization.Tabs.SiteSettings,
+            Order = 160)]
+        public virtual ContentReference NewsListPage { get; set; }
     }
 }

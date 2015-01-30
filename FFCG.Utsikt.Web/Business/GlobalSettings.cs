@@ -19,6 +19,7 @@ namespace FFCG.Utsikt.Web.Business
             RobotsTxtContent = startPage.RobotsTxtContent != null ? startPage.RobotsTxtContent.ToString().RemoveHtmlTags() : string.Empty;
             GoogleAnalyticsAccount = startPage.GoogleAnalyticsAccount;
             Logo = startPage.Logo;
+            NewsListPage = startPage.NewsListPage;
         }
         public RouteValueDictionary SearchPageRoute { get; set; }
         public LinkItemCollection GlobalNavigation { get; set; }
@@ -27,5 +28,6 @@ namespace FFCG.Utsikt.Web.Business
         public string RobotsTxtContent { get; set; }
         public string GoogleAnalyticsAccount { get; set; }
         public ContentReference Logo { get; set; }
+        public ContentReference NewsListPage { get; set; }
     }
 }

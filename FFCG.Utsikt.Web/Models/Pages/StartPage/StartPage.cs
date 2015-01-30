@@ -62,6 +62,6 @@ namespace FFCG.Utsikt.Web.Models.Pages.StartPage
             Order = 30)]
         public virtual ContentArea BottomContentArea { get; set; }
 
- 
+   
     }
 }
