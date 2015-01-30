@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
 using EPiServer;
 using EPiServer.Web.Routing;
@@ -29,7 +31,7 @@ namespace FFCG.Utsikt.Web.Controllers
         public JsonResult Index()
         {
             var newspages = _contentRepository.GetChildren<NewsPage>(_globalSettings.NewsListPage);
-            return Json(JsonConvert.SerializeObject(newspages.Select(p => new Jsonpage(p,_urlResolver))), JsonRequestBehavior.AllowGet);
+            return Json(newspages.Select(p => new Jsonpage(p,_urlResolver)), JsonRequestBehavior.AllowGet);
         }
     }
 
