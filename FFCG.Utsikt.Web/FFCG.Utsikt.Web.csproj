@@ -1320,6 +1320,9 @@
     <Content Include="Static\mmenu\src\js\umd\jquery.mmenu.oncanvas.umd.js" />
     <Content Include="Static\mmenu\src\js\umd\jquery.mmenu.umd.all.js" />
     <Content Include="Static\mmenu\src\js\umd\jquery.mmenu.umd.js" />
+    <Content Include="Static\Styles.css">
+      <DependentUpon>Styles.less</DependentUpon>
+    </Content>
     <Content Include="Util\editor\tinymce\plugins\GroupElementsPlugin\editor_plugin.js" />
     <Content Include="Util\editor\tinymce\plugins\GroupElementsPlugin\img\GroupElements.png" />
     <Content Include="Views\Web.config" />
@@ -1416,6 +1419,10 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Static\Styles.less" />
+    <Content Include="Static\Styles.css.map">
+      <DependentUpon>Styles.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

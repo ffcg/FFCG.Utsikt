@@ -8,12 +8,16 @@
 <div class="startpage" ng-view="">
     <div class="container" ng-controller="homeController">
         <div>
-            {{ news }}
+            <div ng-repeat="article in news">
+                <div>{{ article.Name }}</div>
+                <img src="{{ article.ImageUrl }}" ng-click="showText(article)"/>
+                <div ng-show="article.showArticle">
+                    {{ article.Preamble }}
+                    
+                    {{ article.MainText }}
+                </div>
+            </div>
         </div>
-        @*<div ng-click="methodName(data)">
-            {{ data }}
-            {{ methodName(dataHere) }}
-        </div>*@
         
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">

@@ -1,8 +1,17 @@
 ﻿var myApp = angular.module('epiApp', []);
 
 myApp.controller('homeController', ['$scope', 'dataService', function ($scope, dataService) {
-
+    $scope.isBusy = true;
     $scope.news = [];
+
+    $scope.showText = function (article) {
+        if (!article.showArticle) {
+            article.showArticle = true;
+        } else {
+            article.showArticle = false;
+        }
+
+    }
 
     dataService.getData()
     .then(function (data) {
@@ -12,7 +21,7 @@ myApp.controller('homeController', ['$scope', 'dataService', function ($scope, d
             //Handle error here
         })
     .then(function () {
-        //Afterwards
+        $scope.isBusy = false;
     });
 }]);
 
