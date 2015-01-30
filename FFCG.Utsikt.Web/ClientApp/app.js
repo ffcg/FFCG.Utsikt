@@ -1,1 +1,1 @@
-﻿var myApp = angular.module('epiApp', ['dataService']);
+﻿var myApp = angular.module('epiApp', []);
