@@ -41,10 +41,10 @@
 
 </head>
 
-    <body>
+    <body ng-controller ="linkController">
         @Html.RenderEPiServerQuickNavigator()
         <a href="/">Start</a>
-        <a href="/standard-page/">Standardsida</a>
+        <a ng-href="" ng-click="makeRequest('standard-page')">Standardsida</a>
         <a href="/newslistpage/">nyhetssida</a>
             @RenderBody()
         <script src="/Static/bootstrap-3.2.0-dist/js/ie-fallback-carousel.js"></script>
@@ -52,10 +52,12 @@
         <script src="/Static/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
         
         <script src="/Scripts/angular.min.js"></script>
-        @*<script src="/Scripts/angular-route.min.js"></script>*@
+        <script src="/Scripts/angular-route.min.js"></script>
         <script src="/ClientApp/app.js"></script>
         <script src="/ClientApp/Services/dataService.js"></script>
         <script src="/ClientApp/Controllers/homeController.js"></script>
+        <script src="/ClientApp/Controllers/linkController.js"></script>
+        <script src="/ClientApp/Controllers/standardPageController.js"></script>
  
     </body>
 </html>

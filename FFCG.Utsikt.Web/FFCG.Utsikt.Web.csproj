@@ -457,6 +457,8 @@
   <ItemGroup>
     <Content Include="ClientApp\app.js" />
     <Content Include="ClientApp\Controllers\homeController.js" />
+    <Content Include="ClientApp\Controllers\linkController.js" />
+    <Content Include="ClientApp\Controllers\standardPageController.js" />
     <Content Include="ClientApp\Services\dataService.js" />
     <Content Include="ClientResources\Images\icons\layoutIcons24x24.png" />
     <Content Include="ClientResources\Scripts\Editors\StringList.js" />
@@ -486,6 +488,7 @@
     <Content Include="Models\Pages\StandardNoLeftNavPage\StandardNoLeftNavPage.xml" />
     <Content Include="Models\Pages\StandardPage\StandardPage.xml" />
     <Content Include="Models\Pages\StartPage\StartPage.xml" />
+    <Content Include="PartialViews\standard.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
