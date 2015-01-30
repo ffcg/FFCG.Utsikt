@@ -332,6 +332,7 @@
     <Compile Include="Components\TopNavigation\TopNavigationController.cs" />
     <Compile Include="Components\TopNavigation\TopNavigationViewModel.cs" />
     <Compile Include="Controllers\NewsFeedController.cs" />
+    <Compile Include="Controllers\PageAsJsonController.cs" />
     <Compile Include="Controllers\RobotsTxtController.cs" />
     <Compile Include="Controllers\SitemapController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1324,6 +1325,9 @@
     <Content Include="Static\mmenu\src\js\umd\jquery.mmenu.umd.js" />
     <Content Include="Static\Styles.css">
       <DependentUpon>Styles.less</DependentUpon>
+    </Content>
+    <Content Include="Static\Styles.min.css">
+      <DependentUpon>Styles.css</DependentUpon>
     </Content>
     <Content Include="Util\editor\tinymce\plugins\GroupElementsPlugin\editor_plugin.js" />
     <Content Include="Util\editor\tinymce\plugins\GroupElementsPlugin\img\GroupElements.png" />

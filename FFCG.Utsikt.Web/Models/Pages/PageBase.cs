@@ -1,10 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Web.Helpers;
+using System.Web.Mvc;
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using FFCG.Utsikt.Web.Helpers;
 using FFCG.Utsikt.Web.Util.Search;
+using Newtonsoft.Json;
 
 namespace FFCG.Utsikt.Web.Models.Pages
 {
@@ -88,5 +92,22 @@ namespace FFCG.Utsikt.Web.Models.Pages
         {
             return this.IsVisibleOnSite()&&this.VisibleInMenu;
         }
+
+        public virtual JsonResult ToJson()
+        {
+            return new JsonResult(){Data = new PageBaseJson(this),JsonRequestBehavior = JsonRequestBehavior.AllowGet};
+        }
+    }
+
+    public class PageBaseJson
+    {
+        public PageBaseJson(PageBase page)
+        {
+            PageName = page.PageName;
+            PageType = page.PageTypeName;
+        }
+
+        public string PageName { get; set; }
+        public string PageType { get; set; }
     }
 }

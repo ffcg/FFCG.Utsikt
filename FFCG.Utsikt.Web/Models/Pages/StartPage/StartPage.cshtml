@@ -6,6 +6,7 @@
 }
 
 <div class="startpage" ng-view="">
+
     <div class="container" ng-controller="homeController">
         <div>
             <div ng-repeat="article in news">
@@ -34,6 +35,6 @@
         </div>
     </div>
     <div class="container-full">
-            @Html.PropertyFor(m => m.EpiData.BottomContentArea, new { CssClass = "bottomcontentarea clearfix", Tag = ContentAreaTags.FullWidth })
+        @Html.PropertyFor(m => m.EpiData.BottomContentArea, new { CssClass = "bottomcontentarea clearfix", Tag = ContentAreaTags.FullWidth })
     </div>
 </div>
