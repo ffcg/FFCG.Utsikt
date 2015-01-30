@@ -5,8 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="startpage">
-    <div class="container">
+<div class="startpage" ng-view="">
+    <div class="container" ng-controller="homeController">
+        <div>
+            {{ data }}
+        </div>
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <h1>

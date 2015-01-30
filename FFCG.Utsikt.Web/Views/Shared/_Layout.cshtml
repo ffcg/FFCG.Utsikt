@@ -1,6 +1,6 @@
 ﻿@model FFCG.Utsikt.Web.Models.Pages.IPageViewModel<FFCG.Utsikt.Web.Models.Pages.PageBase>
 <!DOCTYPE html>
-<html lang="@Model.EpiData.LanguageBranch">
+<html lang="@Model.EpiData.LanguageBranch" ng-app="epiApp">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
     <link rel="icon" sizes="192x192" href="touch-icon-192x192.png">
     <!-- For iPhone 6 Plus with 3× display: -->
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
-    <!-- For iPad with 2× display running iOS ≥ 7: -->
+    <!-- For iPad with 2× display running iOS ≥ 7: -->%
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
     <!-- For iPad with 2× display running iOS ≤ 6: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
@@ -42,26 +42,17 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            $('.cookie-message').cookieBar();
-        });
-    </script>
-
-    <script src="~/Static/js/jquery.cookiebar.js"></script>
 </head>
 
     <body>
-        <div id="cookie-bar" class="cookie-message hidden-print">
-            <p>
-                @Html.Translate("/layout/cookietext") <a id='cookie-link' href='@Html.Translate("/layout/cookielink")'>@Html.Translate("/layout/cookielinktext")</a> <a class="cookiebar-close cb-enable">@Html.Translate("/layout/cookiebutton")</a>
-            </p>
-        </div>
         @Html.RenderEPiServerQuickNavigator()
             @RenderBody()
-        <script src="~/Static/bootstrap-3.2.0-dist/js/ie-fallback-carousel.js"></script>
+        <script src="/Static/bootstrap-3.2.0-dist/js/ie-fallback-carousel.js"></script>
 
-        <script src="~/Static/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+        <script src="/Static/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+        
+        <script src="/Scripts/angular.min.js"></script>
+        <script src="/Scripts/angular-route.min.js"></script>
+        <script src="/ClientApp/app.js"></script>
     </body>
 </html>
