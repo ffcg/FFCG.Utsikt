@@ -1,5 +1,5 @@
-﻿@model FFCG.Utsikt.Web.Models.Pages.StandardPage.StandardPageViewModel
-@{
+﻿@model string 
+@*@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.PropertyFor(m => m.EpiData.Image)
@@ -14,7 +14,7 @@ else
 }
 <div class="preamble">@Html.PropertyFor(m => m.EpiData.Preamble)</div>
 <div class="maintext bottommargin">@Html.PropertyFor(m => m.EpiData.MainText)</div>
-@Html.PropertyFor(m => m.EpiData.MainContentArea, new { CssClass = "maincontentarea" })
+@Html.PropertyFor(m => m.EpiData.MainContentArea, new { CssClass = "maincontentarea" })*@
 
 
 lalskdhfajfhöklasd
@@ -30,3 +30,15 @@ lalskdhfajfhöklasd
     </div>
 </div>
 </div>
+
+<div>
+    {{ text }}
+</div>
+
+<div>
+    {{ data.PageName }}
+</div>
+
+<script>
+    angular.module("epiApp").value("episerversidedata", @Html.Raw(Model));
+</script>

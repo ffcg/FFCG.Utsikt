@@ -1432,6 +1432,7 @@
     <Content Include="Static\Styles.css.map">
       <DependentUpon>Styles.css</DependentUpon>
     </Content>
+    <Content Include="Views\Shared\InitialPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

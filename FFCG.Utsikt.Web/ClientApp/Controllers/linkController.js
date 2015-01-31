@@ -8,7 +8,7 @@
             .then(function (data) {
             
                 if (data.PageType == 'StandardPage') {
-                    $location.path('foo');
+                    $location.path(url);
                 }
             },
             function () {

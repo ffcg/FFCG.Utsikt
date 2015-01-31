@@ -1,5 +1,5 @@
-﻿myApp.factory('dataService', ['$q', '$http',
-    function ($q, $http) {
+﻿myApp.factory('dataService', ['$q', '$http', '$location', 
+    function ($q, $http, $location) {
         var _service = {}
 
         var _dataObject = {}
@@ -31,8 +31,20 @@
             return deferred.promise;
         }
 
-        _service.getLastObject = function() {
-            return _dataObject;
+        _service.getLastObject = function () {
+            var deferred = $q.defer();
+
+            if (_dataObject != null) {
+                deferred.resolve(_dataObject);
+            } else {
+                return _service.getPage($location.path);
+            }
+
+            return deferred.promise;
+            //if (_dataObject === undefined || _dataObject == null) {
+            //    _service.getPage($location.path);
+            //}
+            //return _dataObject;
         }
 
         return _service;
