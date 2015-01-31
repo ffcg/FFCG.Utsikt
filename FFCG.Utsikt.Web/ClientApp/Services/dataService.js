@@ -1,5 +1,11 @@
-﻿myApp.factory('dataService', ['$q', '$http',
-    function ($q, $http) {
+﻿(function () {
+    angular
+        .module('services')
+        .factory('dataService', dataService);
+
+    dataService.$inject = ['$q', '$http'];
+
+    function dataService($q, $http) {
         var _service = {}
 
         _service.getData = function () {
@@ -17,4 +23,4 @@
 
         return _service;
     }
-]);
+})();
