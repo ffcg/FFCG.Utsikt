@@ -34,10 +34,10 @@
         _service.getLastObject = function () {
             var deferred = $q.defer();
 
-            if (_dataObject != null) {
+            if (_dataObject.PageName != null) {
                 deferred.resolve(_dataObject);
             } else {
-                return _service.getPage($location.path);
+                return _service.getPage($location.path());
             }
 
             return deferred.promise;
