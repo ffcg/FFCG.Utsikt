@@ -5,7 +5,7 @@
 }
 <div class="startpage" ng-view="">
     <div class="container" ng-controller="homeController">
-        <div class="well" style="overflow-y:auto;">
+        <div class="well news-container" style="overflow-y:auto;">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" ng-class="{active:!$index}" ng-repeat="article in news" data-slide-to="$index"></li>
@@ -13,14 +13,15 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item" ng-class="{active:!$index}" ng-repeat="article in news">
                         <!-- <div ng-repeat="article in news" class="item"> -->
-                        <img src="{{ article.ImageUrl }}" class="news-image" alt="First slide">
+                        <div style=" width: 100%; height: 240px; overflow: hidden;">
+                            <img src="{{ article.ImageUrl }}" class="news-image" alt="First slide">
+                        </div>
                         <div class="news-preamble-container">
                             <div class="news-title">{{ article.Name }}</div>
                         </div>
                         <div class="news-maintext-container">
-                            <span ng-bind-html="article.Preamble">
-                                <span ng-bind-html="article.Preamble"> </span>
-                            </span>
+                            <div class="news-preamble"><span  ng-bind-html="article.Preamble"></span></div>
+                            
                             <div class="news-maintext">
                                 @*<span ng-bind-html="article.MainText"> </span>*@
                             </div>
