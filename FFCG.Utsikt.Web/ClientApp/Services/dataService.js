@@ -7,7 +7,7 @@
         _service.getData = function () {
             var deferred = $q.defer();
 
-            $http.get('newsfeed')
+            $http.get('http://ffcg.utsikt.local/newsfeed')
                 .then(function (result) {
                     deferred.resolve(result.data);
                 }, function () {
@@ -20,7 +20,7 @@
         _service.getPage = function(url) {
             var deferred = $q.defer();
 
-            $http.get('pageasjson/' + url)
+            $http.get('http://ffcg.utsikt.local/pageasjson/?PageUrl=' + url)
                 .then(function (result) {
                     deferred.resolve(result.data);
                 _dataObject = result.data;
